@@ -1,0 +1,12 @@
+# 输入/输出的 apk
+/origin/
+/out/
+# 下载的原始文件、未压缩的镜像 (进 git 的是 image/chrome_edit_env.tar.7z)
+/image/downloads/
+/image/chrome_edit_env.tar
+# 宿主机工具 (7zz, 由 make_image.py 从固定版本的官方包解出)
+/host_tools/
+# 旧版脚本留下的工具和中间文件
+/tools/
+/work/
+__pycache__/

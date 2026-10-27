@@ -1,0 +1,7 @@
+{
+ "variations": "variations_xiaomi18_chrome155.json",
+ "extra_switches": ["--disable-field-trial-config", "--disable-renderer-accessibility"],
+ "keystore": "keystore.jks",
+ "keystore_pass": "chrome_edit",
+ "key_alias": "chrome_edit"
+}
