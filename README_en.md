@@ -10,7 +10,7 @@ To keep scrolling and jumping accurate, our Open WebUI frontend renders every me
 
 **1. Accessibility gets enabled automatically, opening/closing popups stalls for 200-300 ms**
 
-Chrome keeps accessibility off by default, but turns it on as soon as some program on the system reads page information (input methods, autofill/password-manager services, some security or remote-control software, etc.). Once on, every page change has to update an accessibility tree as large as the page itself, so in a long chat every popup open/close (model selector, draft board, ...) stalls for 200-300 ms. Many phones run such services by default without the user noticing. It can be turned off temporarily in `chrome://accessibility`, but that stops working after the browser restarts and accessibility gets enabled again.
+Chrome keeps accessibility off by default, but some programs on the system (automation scripts, input methods, autofill/password-manager services, some security or remote-control software, etc., even when they are not being used on Chrome) cause it to be turned on automatically. Once on, every page change has to update an accessibility tree as large as the page itself, so in a long chat every popup open/close (model selector, draft board, ...) stalls for 200-300 ms. Many phones run such services by default without the user noticing. It can be turned off temporarily in `chrome://accessibility`, but that stops working after the browser restarts and accessibility gets enabled again.
 
 **2. Scroll jank depends on the experiment group Google assigns to the device**
 
